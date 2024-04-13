@@ -63,7 +63,10 @@ Below are some screenshots of the "Mydbdag" DAG in the Airflow UI:
 - **DAG UI**:
   ![DAG UI](screenshots/dag_ui.png)
 
-- **Task Graph**:
-  ![Task Graph](screenshots/dag_tasks_graph.png)
+- **Tasks Graph**:
+  ![Tasks Graph](screenshots/dag_tasks_graph.png)
 
-
+- **Elasticsearch index records**:
+  ![Elasticsearch index records](screenshots/elastic_index_records.png)
+  
+  
