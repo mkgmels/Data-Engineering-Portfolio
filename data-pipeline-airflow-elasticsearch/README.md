@@ -12,21 +12,21 @@ The project is structured as follows:
 data-pipeline-airflow-elasticsearch/
 │
 ├── dags/
-│   └── Mydbdag.py            # Airflow DAG definition file
+│   └── Mydbdag.py                  # Airflow DAG definition file
 │
 ├── logs/
-│   └── task1.log             # Log file for task 1
-│   └── task2.log             # Log file for task 2
+│   └── task1.log                   # Log file for task 1
+│   └── task2.log                   # Log file for task 2
 │
 ├── screenshots/
-│   ├── dag_ui.png            # Screenshot of the Airflow DAG UI
-│   └── dag_tasks_graph.png   # Screenshot of the tasks graph in the Airflow DAG UI
-│
+│   └── dag_ui.png                  # Screenshot of the Airflow DAG UI
+│   └── dag_tasks_graph.png         # Screenshot of the tasks graph in the Airflow DAG UI
+│   └── elastic_index_records.png   # Screenshot of the Elasticsearch index records
 ├── scripts/
-│   └── mydbdag_task1.py      # Script for extracting data from PostgreSQL and saving as CSV
-│   └── mydbdag_task2.py      # Script for loading extracted data into Elasticsearch
+│   └── mydbdag_task1.py            # Script for extracting data from PostgreSQL and saving as CSV
+│   └── mydbdag_task2.py            # Script for loading extracted data into Elasticsearch
 │
-└── README.md                 # Project README file
+└── README.md                       # Project README file
 ```
 
 ## Usage
