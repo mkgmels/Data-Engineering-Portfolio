@@ -1,0 +1,22 @@
+mkgmels73
+*** Found local files:
+***   * /home/mohamed/airflow/logs/dag_id=Mydbdag/run_id=manual__2024-04-13T14:59:16.841681+00:00/task_id=extract_postgresql/attempt=1.log
+[2024-04-13T16:59:29.889+0200] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-04-13T16:59:29.955+0200] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Mydbdag.extract_postgresql manual__2024-04-13T14:59:16.841681+00:00 [queued]>
+[2024-04-13T16:59:29.968+0200] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Mydbdag.extract_postgresql manual__2024-04-13T14:59:16.841681+00:00 [queued]>
+[2024-04-13T16:59:29.969+0200] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2024-04-13T16:59:29.995+0200] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): extract_postgresql> on 2024-04-13 14:59:16.841681+00:00
+[2024-04-13T16:59:30.003+0200] {standard_task_runner.py:63} INFO - Started process 68081 to run task
+[2024-04-13T16:59:30.009+0200] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'Mydbdag', 'extract_postgresql', 'manual__2024-04-13T14:59:16.841681+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/Mydbdag.py', '--cfg-path', '/tmp/tmp8nnsq2_b']
+[2024-04-13T16:59:30.014+0200] {standard_task_runner.py:91} INFO - Job 32: Subtask extract_postgresql
+[2024-04-13T16:59:30.120+0200] {task_command.py:426} INFO - Running <TaskInstance: Mydbdag.extract_postgresql manual__2024-04-13T14:59:16.841681+00:00 [running]> on host mkgmels73
+[2024-04-13T16:59:30.281+0200] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mkgmels73' AIRFLOW_CTX_DAG_ID='Mydbdag' AIRFLOW_CTX_TASK_ID='extract_postgresql' AIRFLOW_CTX_EXECUTION_DATE='2024-04-13T14:59:16.841681+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-13T14:59:16.841681+00:00'
+[2024-04-13T16:59:30.282+0200] {taskinstance.py:430} INFO - ::endgroup::
+[2024-04-13T16:59:30.376+0200] {logging_mixin.py:188} WARNING - /home/mohamed/airflow/dags/mydbdag_task1.py:14 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-04-13T16:59:30.423+0200] {logging_mixin.py:188} INFO - -------Data saved-------
+[2024-04-13T16:59:30.425+0200] {python.py:237} INFO - Done. Returned value was: None
+[2024-04-13T16:59:30.427+0200] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-04-13T16:59:30.445+0200] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=Mydbdag, task_id=extract_postgresql, execution_date=20240413T145916, start_date=20240413T145929, end_date=20240413T145930
+[2024-04-13T16:59:30.546+0200] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-04-13T16:59:30.632+0200] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-04-13T16:59:30.646+0200] {local_task_job_runner.py:222} INFO - ::endgroup::
